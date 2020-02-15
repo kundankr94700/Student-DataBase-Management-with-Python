@@ -392,7 +392,7 @@ class th1(Thread):
                                 top8.title("Display Record")
                                 top8.geometry("350x50+600+300")
                                 l=Label(top8,text='Record Not Found',font=f6,fg='red').pack()
-                                playsound('Audio\\record1.mp3')
+                                playsound('record1.mp3')
 
 
 
@@ -455,7 +455,7 @@ class th1(Thread):
                                 top8.title("Display Record")
                                 top8.geometry("350x50+600+300")
                                 l=Label(top8,text='Record Not Found',font=f6,fg='red').pack()
-                                playsound('Audio\\record1.mp3')
+                                playsound('record1.mp3')
 
 
 
@@ -490,7 +490,7 @@ class th1(Thread):
                                     top11.geometry("320x80+600+200")
                                     l3 = Label(top11, text="Please Upload Photos And Signature Both .",
                                                fg='skyblue', font=f1).place(x=50, y=15)
-                                    playsound('Audio\\add11.mp3')
+                                    playsound('add11.mp3')
                                 else:
 
                                     top11 = Toplevel()
@@ -509,7 +509,7 @@ class th1(Thread):
                                     top11.geometry("320x80+600+200")
                                     l3 = Label(top11, text="Invalid ROll and Mobile Number.", fg='skyblue',
                                                font=f1).place(x=50, y=15)
-                                    playsound('Audio\\add2.mp3')
+                                    playsound('add2.mp3')
 
 
                                 elif yy12.isdigit() == False:
@@ -543,7 +543,7 @@ class th1(Thread):
                                 l3 = Label(top11,
                                            text="Some Details are Not in Appropriate Format ",
                                            fg='skyblue', font=f1).place(x=50, y=15)
-                                playsound('Audio\\add8.mp3')
+                                playsound('add8.mp3')
 
                             else:
                                 yyx12=int(yy12)
@@ -554,7 +554,7 @@ class th1(Thread):
                                     top11.geometry("320x80+600+200")
                                     l3 = Label(top11, text=" Marks Greater Then 100 .", fg='skyblue',
                                                font=f1).place(x=80, y=25)
-                                    playsound('Audio\\add10.mp3')
+                                    playsound('add10.mp3')
                                 else:
                                     v = 1
                                     conn = sqlite3.connect('stu_database.sqlite')
@@ -586,9 +586,9 @@ class th1(Thread):
                                         LLL2 = Label(top1, text='Number Of Records : %d ' % z, font=f7,
                                                      fg='green').place(
                                             x=670, y=360)
-                                        playsound('Audio\\add5.mp3')
+                                        playsound('add5.mp3')
                                     else:
-                                        playsound('Audio\\add7.mp3')
+                                        playsound('add7.mp3')
 
 
 
@@ -625,7 +625,7 @@ class th1(Thread):
                                                   command=dele).place(x=70, y=110)
                             class th6(Thread):
                                 def run(self):
-                                    playsound('Audio\\roll3.mp3')
+                                    playsound('roll3.mp3')
                             t5=th5()
                             t6=th6()
                             t5.start()
@@ -655,7 +655,7 @@ class th1(Thread):
                                                   command=sear).place(x=70, y=110)
                             class th8(Thread):
                                 def run(self):
-                                    playsound('Audio\\roll1.mp3')
+                                    playsound('roll1.mp3')
 
                             t7 = th7()
                             t8 = th8()
@@ -800,7 +800,7 @@ class th1(Thread):
                                             top15.title("Display Record")
                                             top15.geometry("350x50+600+300")
                                             l = Label(top15, text='Record Not Found', font=f6, fg='red').pack()
-                                            playsound('C:\\Users\\Kundan Kumar\\PycharmProjects\\Python\\Audio\\record1.mp3')
+                                            playsound('record1.mp3')
 
 
                                     top6 = Toplevel()
@@ -818,7 +818,7 @@ class th1(Thread):
                                                   command=top6.destroy).place(x=70, y=150)
                             class th10(Thread):
                                 def run(self):
-                                    playsound('Audio\\roll2.mp3')
+                                    playsound('roll2.mp3')
                             t9=th9()
                             t10=th10()
                             t9.start()
@@ -1021,7 +1021,7 @@ class th1(Thread):
                         #top1.mainloop()
                 class th4(Thread):
                     def run(self):
-                        playsound('Audio\\login2.mp3')
+                        playsound('login2.mp3')
 
                 t3=th3()
                 t4=th4()
@@ -1033,12 +1033,12 @@ class th1(Thread):
 
                 o1="Message: Please Enter Username and Password"
 
-                playsound('Audio\\sound3.mp3')
+                playsound('sound3.mp3')
                 L1=Label(root,text=o1,font=f3).place(x=130,y=320)
             else:
                 o2="Please Enter Invalid Username Or Password"
                 L2 = Label(root, text=o2, font=f3).place(x=130, y=320)
-                playsound('Audio\\sound4.mp3')
+                playsound('sound4.mp3')
         def win():
             ans1 = messagebox.askyesno("Exit", "DO You Want to Exit")
             if ans1 == True:
@@ -1087,7 +1087,7 @@ class th1(Thread):
 
 class th2(Thread):
     def run(self):
-        playsound('Audio\\rdbms1.mp3')
+        playsound('rdbms1.mp3')
 
 t1=th1()
 t2=th2()
